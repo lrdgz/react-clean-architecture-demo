@@ -8,7 +8,7 @@ export const userSlice = createSlice({
         createUser: (state, action) => {
             return action.payload;
         },
-        modifyUse: (state, action) => {
+        modifyUser: (state, action) => {
             const formattedData = {... state, ...action.payload};
             return formattedData;
         },
@@ -18,5 +18,5 @@ export const userSlice = createSlice({
     }
 });
 
-export const { createUser, modifyUse, resetUser } = userSlice.actions;
+export const { createUser, modifyUser, resetUser } = userSlice.actions;
 export default userSlice.reducer;
